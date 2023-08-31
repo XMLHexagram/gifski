@@ -13,3 +13,4 @@
 .build
 libs
 .DS_Store
+.swiftpm
