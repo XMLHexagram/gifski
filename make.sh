@@ -34,5 +34,3 @@ xcodebuild -create-xcframework \
 -library libs/libgifski-ios.a \
 -headers ./include/ \
 -output Gifski.xcframework
-
-rm -rf include

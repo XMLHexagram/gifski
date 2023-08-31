@@ -19,14 +19,14 @@ let package = Package(
             name: "Gifski",
             path: "./Gifski.xcframework"
         ),
-//        .target(
-//            name: "Gifski",
-//            dependencies: ["libgifski"],
-//            path: nil
-//        ),
-//        .testTarget(
-//            name: "GifskiTests",
-//            dependencies: ["libgifski"]
-//        ),
+//       .target(
+//           name: "Gifski",
+//           dependencies: ["libgifski"],
+//           path: nil
+//       ),
+//       .testTarget(
+//           name: "GifskiTests",
+//           dependencies: ["libgifski"]
+//       ),
     ]
 )
