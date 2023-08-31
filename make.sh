@@ -24,10 +24,6 @@ lipo -create -output libs/libgifski-ios-sim.a \
 		target/aarch64-apple-ios-sim/release/libgifski.a \
 		target/x86_64-apple-ios/release/libgifski.a
 
-mkdir include
-cp gifski.h include/
-cp module.modulemap include/
-
 xcodebuild -create-xcframework \
 -library libs/libgifski-macos.a \
 -headers ./include/ \
