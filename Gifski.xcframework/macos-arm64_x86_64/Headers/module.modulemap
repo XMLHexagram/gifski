@@ -1,4 +1,4 @@
-module libgifski {
+module Gifski {
   header "gifski.h"
   export *
 }
