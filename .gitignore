@@ -9,3 +9,7 @@
 
 /*.snap
 /*_source.tar.bz2
+
+.build
+libs
+.DS_Store
