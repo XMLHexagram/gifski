@@ -17,13 +17,13 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Gifski",
-            dependencies: ["libgifski"]),
+            dependencies: ["libgifski2"]),
         .binaryTarget(
-            name: "libgifski",
+            name: "libgifski2",
             path: "./Gifski.xcframework"
         ),
         .testTarget(
             name: "GifskiTests",
-            dependencies: ["libgifski"]),
+            dependencies: ["libgifski2"]),
     ]
 )
