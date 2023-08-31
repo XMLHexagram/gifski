@@ -1,4 +1,4 @@
-// swift-tools-version: 5.3
+// swift-tools-version: 5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "Gifski",
-            targets: ["Gifski"]
+            targets: ["libgifski"]
         ),
     ],
     targets: [
@@ -19,11 +19,14 @@ let package = Package(
             name: "libgifski",
             path: "./Gifski.xcframework"
         ),
-        .target(
-            name: "Gifski",
-            dependencies: ["libgifski"]),
-        .testTarget(
-            name: "GifskiTests",
-            dependencies: ["libgifski"]),
+//        .target(
+//            name: "Gifski",
+//            dependencies: ["libgifski"],
+//            path: nil
+//        ),
+//        .testTarget(
+//            name: "GifskiTests",
+//            dependencies: ["libgifski"]
+//        ),
     ]
 )

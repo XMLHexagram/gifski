@@ -1,4 +1,0 @@
-module libgifski {
-  header "gifski.h"
-  export *
-}
