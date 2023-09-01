@@ -11,19 +11,19 @@ let package = Package(
             name: "Gifski",
             targets: ["Gifski"]
         ),
+        .library(name: "libgifski", targets: ["libgifski"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
-            name: "Gifski",
+            name: "libgifski",
             path: "./Gifski.xcframework"
         ),
-//       .target(
-//           name: "Gifski",
-//           dependencies: ["libgifski"],
-//           path: nil
-//       ),
+        .target(
+            name: "Gifski",
+            dependencies: ["libgifski"]
+        )
 //       .testTarget(
 //           name: "GifskiTests",
 //           dependencies: ["libgifski"]

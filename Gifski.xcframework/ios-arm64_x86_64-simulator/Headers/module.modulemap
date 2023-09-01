@@ -1,4 +1,5 @@
 module libgifski {
-  header "gifski.h"
+  umbrella header "gifski.h"
   export *
+  module * { export * }
 }
